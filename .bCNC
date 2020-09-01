@@ -1,0 +1,536 @@
+[bCNC]
+page = Control
+width = 1920
+height = 1027
+sash = 347
+windowstate = zoomed
+language = de
+lastcheck = 1594557071
+
+[Connection]
+port = COM3
+openserial = 1
+
+[Control]
+step = 10
+
+[Events]
+
+[Canvas]
+probe = 0
+
+[Camera]
+aligncam_d = 0.0
+aligncam_dx = 0.0
+aligncam_dy = 0.0
+aligncam_z = 
+aligncam_rotation = 0.0
+aligncam_xcenter = 0.0
+aligncam_ycenter = 0.0
+
+[Warning]
+probe = 0
+
+[Error]
+
+[Probe]
+z = -10
+toolpolicy = 2
+toolchangex = -48.86
+toolchangey = -446.06
+toolchangez = -2.38
+toolprobex = -355.58
+toolprobey = -6.28
+toolprobez = -45.0
+tooldistance = 80.0
+toolheight = 36.81
+toolmz = -58.84
+
+[File]
+dir = C:\Users\ich\OneDrive\Dokumente\cad\Schalter
+file = Wippe Esstisch.nc
+recent.0 = C:\Users\ich\OneDrive\Dokumente\cad\Schalter\Wippe Esstisch.nc
+recent.1 = C:\Users\ich\Downloads\1001.nc
+recent.2 = C:\Users\ich\Downloads\cat-1292989.dxf
+recent.3 = C:\Users\ich\OneDrive\Desktop\case_nc1.nc
+
+[Buttons]
+name.8 = Ecke abtasten
+icon.8 = br
+tooltip.8 = Innerhalb von 5mm ueber Werkstueck plazieren
+command.8 = g91 g38.2 f50 z-10
+	g38.4 f50 z1
+	g38.2 f10 z-2
+	g10 l20 p1 z0
+	g38.4 f10 z1
+	
+	g90 g0 z10
+	g91 g0 x10
+	g90 g1 f100 z-2
+	g91 g38.2 f50 x-10
+	g38.4 f50 x1
+	g38.2 f10 x-2
+	g10 l20 p1 x0
+	g38.4 f50 x1
+	g90 g0 x1
+	g0 z10
+	g0 x-1
+	g10 l20 p1 x0
+	g0 x-1
+	
+	g90 g0 z10
+	g91 g0 y-10
+	g90 g1 f100 z-2
+	g91 g38.2 f50 y10
+	g38.4 f50 y-1
+	g38.2 f10 y2
+	g10 l20 p1 y0
+	g38.4 f50 y-1
+	g90 g0 y-1
+	g0 z10
+	g0 y1
+	g10 l20 p1 y0
+	
+	g90 g0 z10
+	g0 x0 y0
+	g1 f100 z0
+
+[CNC]
+acceleration_x = 25.0
+acceleration_y = 25.0
+acceleration_z = 50.0
+feedmax_x = 3000.0
+feedmax_y = 3000.0
+feedmax_z = 2000.0
+travel_x = 200.0
+travel_y = 200.0
+travel_z = 100.0
+
+[Font]
+tkdefaultfont = Segoe UI,9,normal
+tkfixedfont = Courier New,10,normal
+tkmenufont = Segoe UI,9,normal
+tktextfont = Segoe UI,9,normal
+
+[Color]
+
+[Shortcut]
+
+[Box]
+internal.0 = 1
+
+[Stock]
+comment.0 = 
+thickness.0 = 5.0
+
+[Cut]
+surface.0 = 
+depth.0 = 
+stepz.0 = 
+feed.0 = 
+feedz.0 = 
+strategy.0 = helical+bottom
+ramp.0 = 10
+cutfromtop.0 = False
+spring.0 = False
+exitpoint.0 = on path
+islandsleave.0 = True
+islandsselectedonly.0 = True
+islandscompensate.0 = False
+islandscut.0 = True
+
+[Drill]
+center.0 = True
+depth.0 = 
+peck.0 = 
+dwell.0 = 
+distance.0 = 
+number.0 = 
+
+[Profile]
+endmill.0 = 
+direction.0 = outside
+offset.0 = 0.0
+overcut.0 = 1
+pocket.0 = 0
+
+[Pocket]
+endmill.0 = 
+
+[Tabs]
+ntabs.0 = 5
+dtabs.0 = 0.0
+dx.0 = 5.0
+z.0 = -3.0
+
+[EndMill]
+length.0 = 20.0
+comment.0 = 
+stepover.0 = 40.0
+
+[DragKnife]
+offset.0 = 10.0
+angle.0 = 20
+swivelz.0 = 0
+initdir.0 = X+
+feed.0 = 200
+simulate.0 = False
+simpreci.0 = 0.5
+angle.1 = 20
+swivelz.1 = 0
+initdir.1 = X+
+feed.1 = 200
+simulate.1 = False
+simpreci.1 = 0.5
+angle.2 = 20
+swivelz.2 = 0
+initdir.2 = X+
+feed.2 = 200
+simulate.2 = False
+simpreci.2 = 0.5
+angle.3 = 20
+swivelz.3 = 0
+initdir.3 = X+
+feed.3 = 200
+simulate.3 = False
+simpreci.3 = 0.5
+angle.4 = 20
+swivelz.4 = 0
+initdir.4 = X+
+feed.4 = 200
+simulate.4 = False
+simpreci.4 = 0.5
+
+[Material]
+current = 10
+comment.0 = 
+comment.1 = 
+comment.2 = 
+comment.3 = 
+comment.4 = 
+comment.5 = 
+comment.6 = 
+comment.7 = 
+comment.8 = 
+comment.9 = 
+comment.10 = 
+comment.11 = 
+comment.12 = 
+
+[Function]
+name = Function
+form = x**2
+res = 0.005
+ranx = 10
+rany = 10
+centx = 5
+centy = 0
+dimx = 100.0
+dimy = 100.0
+spacx = 1
+spacy = 1
+lin = 1
+draw = True
+
+[Linearize]
+name = 
+maxseg = 1
+splitlines = False
+
+[Trochoid_Path]
+name = 
+trochcutdiam = 6.0
+direction = inside
+offset = 0.0
+endmill = 
+adaptative = 1
+overcut = 0
+targetdepth = -1
+depthincrement = 1
+tabsnumber = 1
+tabswidth = 1
+tabsheight = 1
+
+[Text]
+name = 
+text = Write this!
+depth = 0.0
+fontsize = 10.0
+fontfile = 
+closed = True
+imagetoascii = 
+charswidth = 80
+
+[Halftone]
+name = 
+file = 
+channel = Luminance
+invert = 
+drawsize = 250.0
+cellsize = 5.0
+diametermax = 4.0
+diametermin = 0.2
+angle = 0.0
+drawborder = False
+depth = 0.0
+conical = False
+
+[Controller]
+grbl_0 = 10
+grbl_1 = 25
+grbl_2 = 0
+grbl_3 = 0
+grbl_4 = 0
+grbl_5 = 0
+grbl_6 = 0
+grbl_10 = 1
+grbl_11 = 0.01
+grbl_12 = 0.002
+grbl_13 = 0
+grbl_20 = 0
+grbl_21 = 0
+grbl_22 = 0
+grbl_23 = 0
+grbl_24 = 25.0
+grbl_25 = 500.0
+grbl_26 = 250
+grbl_27 = 1.0
+grbl_30 = 1000.0
+grbl_31 = 0.0
+grbl_32 = 0
+grbl_100 = 250.0
+grbl_101 = 250.0
+grbl_102 = 250.0
+grbl_110 = 500.0
+grbl_111 = 500.0
+grbl_112 = 500.0
+grbl_120 = 10.0
+grbl_121 = 10.0
+grbl_122 = 10.0
+grbl_130 = 200.0
+grbl_131 = 200.0
+grbl_132 = 200.0
+grbl_140 = 200.0
+grbl_141 = 200.0
+grbl_142 = 200.0
+
+[Spirograph]
+name = 
+radiusexternal = 50.0
+radiusinternal = 33.0
+radiusoffset = 13.0
+depth = 0
+
+[Trochoidal]
+name = 
+cw = True
+circ = False
+evenspacing = True
+entry = False
+rdoc = 0.2
+dia = 3
+feed = 2000
+
+[Pyrograph]
+name = 
+toolsize = 0.5
+depth = 0.0
+maxsize = 100.0
+feedmin = 250
+feedmax = 5000
+direction = Horizontal
+drawborder = False
+file = 
+
+[Gear]
+name = 
+n = 10
+phi = 17.0
+pc = 5.0
+
+[Trochoidal 3D]
+name = 
+diam = 
+endmill = 
+ae = 0.3
+typesplice = Warpedarc
+direction = inside
+offset = 0.0
+adaptative = 1
+overcut = 0
+targetdepth = -1
+depthincrement = 1
+cw = True
+rpm = 12000
+feed = 1200
+zfeed = 
+splicesteps = 12
+
+[Intersection]
+name = 
+
+[Center]
+name = 
+
+[Helical]
+name = 
+sel_blocks = False
+x = 0.0
+y = 0.0
+z = 0.0
+cutdiam = 1.5
+endmill = 
+pitch = 0.1
+depth = 3.0
+mult_feed_z = 1.0
+helicalcut = Helical Cut
+entry = Center
+clearanceentry = 0.0
+noreturntosafez = False
+
+[Scaling]
+name = 
+xscale = 
+yscale = 
+zscale = 
+centered = 0
+feed = 1200
+zfeed = 
+rpm = 12000
+
+[ArcFit]
+name = 
+preci = 0.5
+linpreci = 0.001
+numseg = 3
+
+[Tile]
+name = 
+nx = 3
+ny = 3
+dx = 50.0
+dy = 50.0
+
+[Marker for manual drilling]
+name = 
+mark size = 10.0
+posx = 0
+posy = 0
+burn time = 4.0
+burn power = 1000.0
+mark power = 400.0
+mark type = Cross
+draw ring = True
+
+[FlatPath]
+
+[Zig-Zag]
+name = 
+nlines = 34
+linelen = 33.0
+startendlen = 5.0
+step = 1.0
+cornerres = 5
+depth = -0.1
+
+[Sketch]
+name = 
+grundgy = Medium
+depth = 0.0
+maxsize = 250.0
+squiggletotal = 300
+squigglelength = 400.0
+fading = 4
+max_light = 256
+drawborder = False
+casual = True
+repetition = False
+file = 
+channel = Luminance
+
+[Random]
+name = 
+randx = 5.0
+randy = 5.0
+
+[Midi2CNC]
+name = 
+ppu_x = 200.0
+ppu_y = 200.0
+ppu_z = 200.0
+max_x = 50
+max_y = 50
+max_z = 20
+axisused = XYZ
+file = 
+
+[Difference]
+name = 
+
+[Driller]
+name = 
+holesdistance = 10.0
+targetdepth = 0.0
+peck = 0.0
+dwell = 0.0
+useanchor = False
+file = 
+
+[Slice Mesh]
+name = 
+file = 
+flat = True
+cam3d = False
+faceup = Z
+scale = 1
+zoff = 0
+zstep = 0.1
+zmin = -1
+zmax = 1
+
+[Jigsaw]
+name = 
+width = 1000.0
+height = 800.0
+piece_count = 100
+random_seed = 1
+threshold = 1.2
+tap_shape = basic
+
+[Bowl]
+name = 
+d = 30.0
+res = 10.0
+pocket = 1
+
+[Hilbert]
+name = 
+size = 50.0
+order = 2
+depth = 0
+
+[Flatten]
+name = 
+xstart = 0.0
+ystart = 0.0
+flatwidth = 30.0
+flatheight = 20.0
+flatdepth = 0.0
+borderpass = True
+cutdirection = Climb
+pockettype = Raster
+
+[ClosePath]
+
+[Heightmap]
+name = 
+depth = -1.0
+maxsize = 100.0
+scan = Rows
+scandir = Alternating
+cuttop = False
+cutborder = False
+invert = False
+singlepass = False
+file = 
+
