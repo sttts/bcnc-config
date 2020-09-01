@@ -58,10 +58,11 @@ recent.3 = C:\Users\ich\OneDrive\Desktop\case_nc1.nc
 name.8 = Ecke abtasten
 icon.8 = br
 tooltip.8 = Innerhalb von 5mm ueber Werkstueck plazieren
-command.8 = g91 g38.2 f50 z-10
+command.8 = g59
+	g91 g38.2 f50 z-10
 	g38.4 f50 z1
 	g38.2 f10 z-2
-	g10 l20 p1 z0
+	g10 l20 p6 z0
 	g38.4 f10 z1
 	g90 g0 z10
 	g91 g0 x10
@@ -69,7 +70,7 @@ command.8 = g91 g38.2 f50 z-10
 	g91 g38.2 f50 x-10
 	g38.4 f50 x1
 	g38.2 f10 x-2
-	g10 l20 p1 x1
+	g10 l20 p6 x1
 	g38.4 f50 x2
 	g90 g0 x2
 	g0 z10
@@ -79,12 +80,13 @@ command.8 = g91 g38.2 f50 z-10
 	g91 g38.2 f50 y10
 	g38.4 f50 y-1
 	g38.2 f10 y2
-	g10 l20 p1 y-1
+	g10 l20 p6 y-1
 	g38.4 f50 y-2
 	g90 g0 y-2
 	g0 z10
 	g0 x0 y0
 	g1 f100 z0
+	g54
 
 [CNC]
 acceleration_x = 25.0
